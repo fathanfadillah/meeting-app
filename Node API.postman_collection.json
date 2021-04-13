@@ -1,0 +1,293 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Node API",
+		"_postman_id": "3c57a0d6-4847-6db8-95af-df385a545834",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User - GET all",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User - GET single",
+			"request": {
+				"url": "http://localhost:3000/users/8",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User - POST",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Daniel\",\n  \"email\": \"daniel@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User - PATCH",
+			"request": {
+				"url": "http://localhost:3000/users/3",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Evan\",\n  \"email\": \"evan@email.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User - DELETE",
+			"request": {
+				"url": "http://localhost:3000/users/5",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task - POST",
+			"request": {
+				"url": "http://localhost:3000/tasks",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"A Task for project 2\",\n  \"description\": \"This is a crazy awesome task.\",\n  \"project_id\" : 2,\n  \"user_id\": 1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task - GET all",
+			"request": {
+				"url": "http://localhost:3000/tasks",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task - GET single",
+			"request": {
+				"url": "http://localhost:3000/tasks/8",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task - PATCH",
+			"request": {
+				"url": "http://localhost:3000/tasks/5",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"A task for project 1 - edited\",\n  \"description\": \"This is a crazy awesome task woohoo.\",\n  \"project_id\" : 1,\n  \"user_id\": 2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task - DELETE",
+			"request": {
+				"url": "http://localhost:3000/tasks/4",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project - POST",
+			"request": {
+				"url": "http://localhost:3000/projects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"My project\",\n  \"description\": \"This is my project.\",\n  \"user_id\": 1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project - GET all",
+			"request": {
+				"url": "http://localhost:3000/projects",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project - GET single",
+			"request": {
+				"url": "http://localhost:3000/projects/7",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project - PATCH",
+			"request": {
+				"url": "http://localhost:3000/projects/6",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"My project\",\n  \"description\": \"This is my project.\",\n  \"user_id\": 1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project - DELETE",
+			"request": {
+				"url": "http://localhost:3000/projects/15",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
