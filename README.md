@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node / Express / Sequelize REST API Starter
 
 This is a small sample project to help others get more familiar with developing a REST API using Node, Express and Sequelize.
@@ -48,3 +49,6 @@ After you config your database
 sequelize db:migrate
 
 ```
+=======
+# meeting-app
+>>>>>>> aa07ec7ac3dac3bc9b71f54ac87d45edde5e7766
