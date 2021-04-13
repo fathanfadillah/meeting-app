@@ -18,12 +18,12 @@ const User = sequelize.define('users', {
     waktuMasuk: {
         type: Sequelize.DATE,
         field:'waktuMasuk',
-        defaultValue: 'CURRENT_TIMESTAMP'
+        defaultValue: 'Sequelize.NOW'
     },
     waktuKeluar: {
         type: Sequelize.DATE,
         field:'waktuKeluar',
-        defaultValue: 'CURRENT_TIMESTAMP'
+        defaultValue: 'Sequelize.NOW'
     }
 },
     {

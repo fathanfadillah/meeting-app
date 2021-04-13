@@ -29,14 +29,17 @@ function createRouter(Router, Model, modelName, path) {
             })
             .then(model => addModelLinks([model], req)[0])
             .then(model => {
-                    res.send(model)
                     return model
-                        ? res.status(201)
-                            .json({
-                                status: 201,
-                                message: `${modelName} created.`,
-                                data: model
+                        ? 
+                        Model
+                        .findAll()
+                        .then(model => addModelLinks(model, req))
+                        .then(model => {
+                            // res.json(model)
+                            res.status(201).render('user',{
+                                data : model
                             })
+                        })
                         : res.status(403)
                             .json({
                                 status: 403,
