@@ -16,7 +16,7 @@ const app = express()
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
   
-app.get('/home', function(req, res){
+app.get('/', function(req, res){
   
     // Rendering our web page i.e. Demo.ejs
     // and passing title variable through it
@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use('/users', userRouter)
 
-app.get('*', userRouter)
+// app.get('*', userRouter)
 
 /* Event Listeners: */
 // userEvents.on('usersFound', users => {
