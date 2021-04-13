@@ -53,7 +53,7 @@ function createRouter(Router, Model, modelName, path) {
                 .then(model => addModelLinks(model, req))
                 .then(model => {
                     // res.json(model)
-                    res.render('index',{
+                    res.render('user',{
                         data : model
                     })
                 })

@@ -11,38 +11,8 @@
 
 <main>
     <div class="jumbotron">
-        <!-- <p>Welcome to templating using EJS</p> -->
-        <table id="line">
-            <thead>
-                <tr>
-                    <th>name</th>
-                    <th>email</th>
-                    <th>Saldo</th>
-                    <th>waktuMasuk</th>
-                    <th>waktuKeluar</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% data.forEach(function(i) { %>
-                <tr>
-                    <th><p><%= i.name %></p></th>
-                    <th><p><%= i.email %></p></th>
-                    <th><p><%= i.saldo %></p></th>
-                    <th><p><%= i.waktuMasuk %></p></th>
-                    <th><p><%= i.waktuKeluar %></p></th>
-                </tr>
-                <% }); %>
-            </tbody>
-        </table>
-    </div>
-    <div>
-        <form method="POST" action="/users">
-            Name : <input type="text" name="name" id="name"><br><br>
-            Email : <input type="text" name="email" id="email"><br><br>
-            Saldo : <input type="number" name="saldo" id="saldo"><br><br>
-            <!-- <input type="text" name="" id=""> -->
-            <button type="submit">Submit</button>
-        </form>
+        <h1>This is great</h1>
+        <p>Welcome to Meeting App</p>
     </div>
 </main>
 

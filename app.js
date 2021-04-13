@@ -21,7 +21,7 @@ app.get('/', function(req, res){
   
     // Rendering our web page i.e. Demo.ejs
     // and passing title variable through it
-    res.send('welcome')
+    res.render('index')
     // res.render('index', {
     //     title: 'View Engine Demo'
     // })
