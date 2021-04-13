@@ -11,8 +11,29 @@
 
 <main>
     <div class="jumbotron">
-        <h1>This is great <%= title %></h1>
-        <p>Welcome to templating using EJS</p>
+        <!-- <p>Welcome to templating using EJS</p> -->
+        <table id="line">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>Saldo</th>
+                    <th>waktuMasuk</th>
+                    <th>waktuKeluar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(function(i) { %>
+                <tr>
+                    <th><p><%= i.name %></p></th>
+                    <th><p><%= i.email %></p></th>
+                    <th><p><%= i.saldo %></p></th>
+                    <th><p><%= i.waktuMasuk %></p></th>
+                    <th><p><%= i.waktuKeluar %></p></th>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
     </div>
 </main>
 

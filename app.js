@@ -2,6 +2,7 @@ const express         = require('express')
 const bodyParser      = require('body-parser')
 const {userRouter}    = require('./routers/userRouter')
 const path = require('path')
+// const {userRouter}    = require('./routers/userRouter')
 // const {taskRouter}    = require('./routers/taskRouter')
 // const {projectRouter} = require('./routers/projectRouter')
 
@@ -20,9 +21,10 @@ app.get('/', function(req, res){
   
     // Rendering our web page i.e. Demo.ejs
     // and passing title variable through it
-    res.render('index', {
-        title: 'View Engine Demo'
-    })
+    res.send('welcome')
+    // res.render('index', {
+    //     title: 'View Engine Demo'
+    // })
 })
 
 // bodyParser allows us to read the payload and set it to json so we can work with it

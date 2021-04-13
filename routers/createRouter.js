@@ -29,6 +29,7 @@ function createRouter(Router, Model, modelName, path) {
             })
             .then(model => addModelLinks([model], req)[0])
             .then(model => {
+                    res.send(model)
                     return model
                         ? res.status(201)
                             .json({
@@ -41,6 +42,7 @@ function createRouter(Router, Model, modelName, path) {
                                 status: 403,
                                 message: `Could not create ${modelName}.`
                             })
+
                 
             })
     })
@@ -50,7 +52,10 @@ function createRouter(Router, Model, modelName, path) {
                 .findAll()
                 .then(model => addModelLinks(model, req))
                 .then(model => {
-                    res.json(model)
+                    // res.json(model)
+                    res.render('index',{
+                        data : model
+                    })
                 })
     })
 
